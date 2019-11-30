@@ -18,7 +18,7 @@
 'use strict';
 
 // CODELAB: Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v3';
+const CACHE_NAME = 'static-cache-v4';
 const DATA_CACHE_NAME = 'data-cache-v1';
 
 // CODELAB: Add list of files to cache here.
@@ -28,8 +28,7 @@ const FILES_TO_CACHE = [
   '/manifest.json',
   '/scripts/app.js',
   '/scripts/install.js',
-  '/scripts/luxon-1.11.4.js',
-  '/styles/inline.css',
+  '/scripts/luxon.min.js',
   '/images/add.svg',
   '/images/clear-day.svg',
   '/images/clear-night.svg',
@@ -47,13 +46,13 @@ const FILES_TO_CACHE = [
   '/images/tornado.svg',
   '/images/wind.svg',
   '/images/favicon.ico',
-  '/images/icon-128x128.png',
-  '/images/icon-144x144.png',
-  '/images/icon-152x152.png',
-  '/images/icon-192x192.png',
-  '/images/icon-256x256.png',
-  '/images/icon-32x32.png',
-  '/images/icon-512x512.png',
+  '/images/icons/icon-128x128.png',
+  '/images/icons/icon-144x144.png',
+  '/images/icons/icon-152x152.png',
+  '/images/icons/icon-192x192.png',
+  '/images/icons/icon-256x256.png',
+  '/images/icons/icon-32x32.png',
+  '/images/icons/icon-512x512.png',
 ];
 
 self.addEventListener('install', (evt) => {
