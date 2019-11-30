@@ -249,6 +249,7 @@ function saveLocationList(locations) {
  */
 function loadLocationList() {
   let locations = localStorage.getItem('locationList');
+
   if (locations) {
     try {
       locations = JSON.parse(locations);
@@ -256,11 +257,17 @@ function loadLocationList() {
       locations = {};
     }
   }
+
   if (!locations || Object.keys(locations).length === 0) {
     const key = '40.7720232,-73.9732319';
+
     locations = {};
-    locations[key] = {label: 'New York City', geo: '40.7720232,-73.9732319'};
+    locations[key] = {
+      label: 'New York City',
+      geo: '40.7720232,-73.9732319',
+    };
   }
+
   return locations;
 }
 

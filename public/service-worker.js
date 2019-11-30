@@ -25,6 +25,7 @@ const DATA_CACHE_NAME = 'data-cache-v1';
 const FILES_TO_CACHE = [
   '/',
   '/index.html',
+  '/manifest.json',
   '/scripts/app.js',
   '/scripts/install.js',
   '/scripts/luxon-1.11.4.js',
@@ -45,6 +46,14 @@ const FILES_TO_CACHE = [
   '/images/thunderstorm.svg',
   '/images/tornado.svg',
   '/images/wind.svg',
+  '/images/favicon.ico',
+  '/images/icon-128x128.png',
+  '/images/icon-144x144.png',
+  '/images/icon-152x152.png',
+  '/images/icon-192x192.png',
+  '/images/icon-256x256.png',
+  '/images/icon-32x32.png',
+  '/images/icon-512x512.png',
 ];
 
 self.addEventListener('install', (evt) => {
