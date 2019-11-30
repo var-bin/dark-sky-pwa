@@ -5,7 +5,9 @@
   "homepage": "https://codelabs.developers.google.com/codelabs/your-first-pwapp/",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "serve:lhci": "node server.js",
+    "lhci": "lhci autorun --upload.target=temporary-public-storage || echo \"LHCI failed!\""
   },
   "dependencies": {
     "express": "^4.16.4",
